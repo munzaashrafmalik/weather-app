@@ -1,24 +1,38 @@
 # weather-app
 Advanced Weather Forecast App with real-time data, 5-day forecast, UV index, and interactive maps.
-# Advanced Weather Forecast
+Weather App – Advanced Weather Forecast
 
-This is a **Pro-level weather application** that provides accurate and real-time weather information. It integrates multiple weather APIs to show:
+Description:
+Comprehensive weather forecasting application with real-time data visualization, interactive maps, and location-based services. Integrates multiple weather APIs to provide accurate forecasts, UV index, air quality metrics, and severe weather alerts with an intuitive and responsive user interface. Features include dark mode, current location detection, 5-day forecast, animated weather icons, and mobile-friendly design. Perfect addition to a modern portfolio showcasing full-stack JavaScript skills and API integration.
 
-- Current weather and temperature
-- 5-day weather forecast
-- UV index and air quality metrics
-- Location-based weather using browser geolocation
-- Interactive weather icons and mobile-friendly animations
-- Dark mode toggle for user comfort
+Live Demo:
+https://weather-app-by-munza.netlify.app/
 
-Built with **HTML, CSS, and JavaScript**, this project demonstrates API integration, asynchronous programming, and modern UI design.
+Source Code (GitHub):
+https://github.com/munzaashrafmalik/weather-app
 
-## Live Demo
-[Check it out here](https://your-netlify-link.netlify.app)
+Technologies Used:
 
-## Features
-- Search weather by city
-- Display detailed weather metrics
-- 5-day forecast visualization
-- Dark/Light mode toggle
-- Mobile responsive design
+HTML, CSS, JavaScript
+
+OpenWeatherMap API
+
+Responsive and mobile-first design
+
+Interactive UI with animations and icons
+
+Key Features:
+
+🌙 Dark mode toggle
+
+📍 Real-time weather for current location
+
+🌡️ 5-day weather forecast
+
+🎨 Animated weather icons
+
+📱 Fully mobile-responsive
+
+💨 Wind speed, humidity, temperature feels-like
+
+🌫️ Air quality and UV index indicators
