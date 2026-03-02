@@ -1,7 +1,8 @@
 # Weather Pro 🌤️
 
 A professional-level weather application built with Next.js 15, TypeScript, and Tailwind CSS.
-
+# weather app URL
+https://weather-app-munza.netlify.app/
 ## Features
 
 ✨ **Beautiful UI** - Modern glassmorphism design with dynamic weather-based gradients
