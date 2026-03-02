@@ -1,38 +1,151 @@
-# weather-app
-Advanced Weather Forecast App with real-time data, 5-day forecast, UV index, and interactive maps.
-Weather App – Advanced Weather Forecast
+# Weather Pro 🌤️
 
-Description:
-Comprehensive weather forecasting application with real-time data visualization, interactive maps, and location-based services. Integrates multiple weather APIs to provide accurate forecasts, UV index, air quality metrics, and severe weather alerts with an intuitive and responsive user interface. Features include dark mode, current location detection, 5-day forecast, animated weather icons, and mobile-friendly design. Perfect addition to a modern portfolio showcasing full-stack JavaScript skills and API integration.
+A professional-level weather application built with Next.js 15, TypeScript, and Tailwind CSS.
 
-Live Demo:
-https://weather-app-by-munza.netlify.app/
+## Features
 
-Source Code (GitHub):
-https://github.com/munzaashrafmalik/weather-app
+✨ **Beautiful UI** - Modern glassmorphism design with dynamic weather-based gradients
+🌍 **Global Coverage** - Search for any city worldwide
+📍 **Location Detection** - Auto-detect user's current location
+📊 **Current Weather** - Real-time weather data with detailed metrics
+⏰ **Hourly Forecast** - 24-hour weather prediction
+📅 **7-Day Forecast** - Weekly weather outlook
+🌓 **Theme Toggle** - Dark/Light mode support
+📱 **Responsive Design** - Works perfectly on all devices
 
-Technologies Used:
+## Tech Stack
 
-HTML, CSS, JavaScript
+- **Framework:** Next.js 15 (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Icons:** Lucide React
+- **API:** OpenWeatherMap
+- **HTTP Client:** Axios
 
-OpenWeatherMap API
+## Getting Started
 
-Responsive and mobile-first design
+### Prerequisites
 
-Interactive UI with animations and icons
+- Node.js 18+ installed
+- npm or yarn package manager
 
-Key Features:
+### Installation
 
-🌙 Dark mode toggle
+1. **Get an API Key**
+   - Sign up at [OpenWeatherMap](https://openweathermap.org/api)
+   - Get your free API key
 
-📍 Real-time weather for current location
+2. **Configure Environment**
+   ```bash
+   # Edit .env.local and add your API key
+   NEXT_PUBLIC_OPENWEATHER_API_KEY=your_actual_api_key
+   ```
 
-🌡️ 5-day weather forecast
+3. **Install Dependencies**
+   ```bash
+   npm install
+   ```
 
-🎨 Animated weather icons
+4. **Run Development Server**
+   ```bash
+   npm run dev
+   ```
 
-📱 Fully mobile-responsive
+5. **Open Browser**
+   - Navigate to `http://localhost:3000`
 
-💨 Wind speed, humidity, temperature feels-like
+## Project Structure
 
-🌫️ Air quality and UV index indicators
+```
+src/
+├── app/                  # Next.js App Router
+│   ├── globals.css      # Global styles
+│   ├── layout.tsx       # Root layout
+│   └── page.tsx         # Home page
+├── components/          # React components
+│   ├── CitySearch.tsx   # City search component
+│   ├── CurrentWeather.tsx
+│   ├── DailyForecast.tsx
+│   ├── HourlyForecast.tsx
+│   ├── ThemeToggle.tsx
+│   └── WeatherDashboard.tsx
+├── lib/                 # Utilities
+│   ├── utils.ts        # Helper functions
+│   └── weather.ts      # Weather API & formatters
+└── types/              # TypeScript types
+    └── weather.ts      # Weather data types
+```
+
+## API Endpoints Used
+
+- **Current Weather:** `/weather`
+- **5-Day Forecast:** `/forecast`
+- **Geocoding:** `/geo/1.0/direct`
+
+## Available Scripts
+
+```bash
+npm run dev      # Start development server
+npm run build    # Build for production
+npm run start    # Start production server
+npm run lint     # Run ESLint
+```
+
+## Deployment
+
+### Vercel (Recommended)
+
+1. Push code to GitHub
+2. Import project to [Vercel](https://vercel.com)
+3. Add environment variable `NEXT_PUBLIC_OPENWEATHER_API_KEY`
+4. Deploy!
+
+### Other Platforms
+
+```bash
+npm run build
+npm run start
+```
+
+## Environment Variables
+
+| Variable | Description | Required |
+|----------|-------------|----------|
+| `NEXT_PUBLIC_OPENWEATHER_API_KEY` | OpenWeatherMap API key | Yes |
+
+## Features Breakdown
+
+### Search Functionality
+- Real-time city search with autocomplete
+- Support for city name, state, and country
+- Display of search results with location details
+
+### Weather Display
+- Current temperature with "feels like"
+- High/Low temperatures
+- Weather condition with animated icons
+- Humidity, wind speed, pressure, cloud coverage
+- Sunrise and sunset times
+
+### Forecasts
+- Hourly forecast for next 24 hours
+- 7-day daily forecast
+- Precipitation probability
+- Weather icons for each period
+
+### UI/UX
+- Dynamic background gradients based on weather
+- Smooth animations and transitions
+- Glassmorphism card designs
+- Responsive layout for mobile, tablet, desktop
+- Dark/light theme toggle
+
+## License
+
+MIT License - feel free to use this project for learning or production.
+
+## Acknowledgments
+
+- Weather data provided by [OpenWeatherMap](https://openweathermap.org/)
+- Icons from [Lucide React](https://lucide.dev/)
+- UI components with [Tailwind CSS](https://tailwindcss.com/)
